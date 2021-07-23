@@ -1,4 +1,4 @@
-package matrices;
+package pe.edu.epeu.matrices;
 public class Matrices {
 
     public void sumaMatrices(int[][] mA, int[][] mB) {
