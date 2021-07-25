@@ -1,4 +1,4 @@
-P1	lona      	metros	C1	12.0	0.016	53.0
+P1	lona      	metros	C1	12.0	0.016	51.0
 P2	popelina  	metros	C1	35.0	0.014	29.0
 P3	toalla    	metros	C1	12.0	0.016	49.0
 P4	bombasi   	metros	C1	07.0	0.028	56.0
