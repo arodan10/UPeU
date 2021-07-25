@@ -1,7 +1,6 @@
 package pe.edu.upeu.app;
 
 import pe.edu.upeu.dao.CategoriaDAO;
-import pe.edu.upeu.dao.ClienteDAO;
 import pe.edu.upeu.dao.ProductoDAO;
 import pe.edu.upeu.dao.UsuarioDAO;
 import pe.edu.upeu.dao.VentaDAO;
@@ -24,14 +23,12 @@ public class App{
         "\n31=Eliminar Usuario"+
         "\n4=Registrar Venta"+
         "\n41=Reporte Ventas por fechas"+
-        "\n5=registrarCliente"+
         "\n0=Salir del sistema"
         ;     
         CategoriaDAO daoCat;   
         UsuarioDAO daoUso;
         ProductoDAO proDao;
         VentaDAO ventDao;
-        ClienteDAO cliDAO;
         TecladoRead tre=new TecladoRead();
         int opciones=tre.read(0, mensaje);         
         do {
@@ -43,8 +40,7 @@ public class App{
                 case 3: daoUso=new UsuarioDAO(); daoUso.registrarUsuario();  break; 
                 case 31:daoUso=new UsuarioDAO(); daoUso.eliminarUsuario(); break;    
                 case 4: ventDao=new VentaDAO(); ventDao.registroVentaGeneral(); break;   
-                case 41: ventDao=new VentaDAO(); ventDao.reportarVentasRangoFecha(); break;
-                case 5: cliDAO=new ClienteDAO(); cliDAO.RegistrarCliente(); break;   
+                case 41: ventDao=new VentaDAO(); ventDao.reportarVentasRangoFecha(); break; 
                 default:System.out.println("Opcion no existe"); break;
             }       
                  

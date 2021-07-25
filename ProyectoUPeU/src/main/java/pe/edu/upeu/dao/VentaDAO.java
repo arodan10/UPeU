@@ -2,7 +2,6 @@ package pe.edu.upeu.dao;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
 import pe.edu.upeu.data.AppCrud;
 import pe.edu.upeu.modelo.ProductoTO;
 import pe.edu.upeu.modelo.VentaDetalleTO;
