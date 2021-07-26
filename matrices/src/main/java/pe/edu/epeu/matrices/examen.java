@@ -34,27 +34,27 @@ public class examen {
     } 
 
     /*--------------------------------*/
-    public void transformada26(int dimen, int numInit) {
-        String[][] matriz=new String[dimen][dimen];
+    public void transformada21(int dimen, int valInit) {
+        String[][] matriz=new String[dimen][dimen];// i = Fila; j=Columna
         for (int j = 0; j < matriz[0].length; j++) {
             if(j%2==0){
                 for (int i =  matriz.length-1; i >=0; i--) {
-                    matriz[j][i]=""+numInit;
-                    numInit++;
+                    matriz[i][j]=""+valInit;
+                    valInit++;
                 }                
             }else{
                 for (int i = 0; i < matriz.length; i++) {
-                    matriz[j][i]=""+numInit;
-                    numInit++;
+                    matriz[i][j]=""+valInit;
+                    valInit++;
                 }
-            }
+            } 
         }
-        imprimirMatrizCadena(matriz);
+        imprimirMatrizCadena(matriz);        
     }
 
     public static void main(String[] args) {
         Matrices transf=new Matrices();
-        transf.transformada26(5, 0);
+        transf.transformada21(5, 0);
         System.out.println("");
                
     }
