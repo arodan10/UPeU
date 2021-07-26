@@ -14,7 +14,7 @@ public class App{
     static Ansi color=new Ansi();
 
     public static void menuMain() {
-        String mensaje="Seleccion el algoritmo que desea probar:"+
+        String mensaje="Seleccion la opcion que desea ejecutar:"+
         "\n1=Registrar Categoria"+
         "\n11=Reportar Categoria"+
         "\n2=Registrar Producto"+

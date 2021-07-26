@@ -80,41 +80,25 @@ public class Matrices {
         imprimirMatrizCadena(matriz);
     }
 
-    public void transformada21(int dimen, int numInit) {
+    public void transformada21(int dimen, int valInit) {
         String[][] matriz=new String[dimen][dimen];// i = Fila; j=Columna
         for (int j = 0; j < matriz[0].length; j++) {
-            if (j%2==0) {
-                for (int i = 0; i < matriz.length; i++) {
-                    matriz[i][j]=""+numInit;
-                    numInit++;
-                }
-            } else {
-                for (int i = matriz.length-1; i >=0 ; i--) {
-                    matriz[i][j]=""+numInit;
-                    numInit++;
+            if(j%2==0){
+                for (int i =  matriz.length-1; i >=0; i--) {
+                    matriz[i][j]=""+valInit;
+                    valInit++;
                 }                
+            }else{
+                for (int i = 0; i < matriz.length; i++) {
+                    matriz[i][j]=""+valInit;
+                    valInit++;
+                }
             } 
         }
         imprimirMatrizCadena(matriz);        
     }
 
-    public void transformada28(int dimen, int numInit) {
-        String[][] matriz=new String[dimen][dimen];//j=filas, i=columnas
-        for (int j = matriz.length-1; j >=0; j--) {
-            if(j%2==0){
-                for (int i = 0; i < (matriz[0].length); i++) {            
-                    matriz[j][i]=""+numInit;
-                    numInit++;
-                }
-            }else{
-                for (int i = matriz[0].length-1; i >=0 ; i--) {            
-                    matriz[j][i]=""+numInit;
-                    numInit++;
-                }
-            }
-        }
-        imprimirMatrizCadena(matriz);
-    }
+    
 
     public void transformada05(int dimen, int valInit) {
         String[][] matriz=new String[dimen][dimen];// i =filas, j=columnas
@@ -169,7 +153,23 @@ public class Matrices {
         }
         imprimirMatrizCadena(matriz);  
     }
-
+    public void transformada28(int dimen, int numInit) {
+        String[][] matriz=new String[dimen][dimen];//j=filas, i=columnas
+        for (int j = matriz.length-1; j >=0; j--) {
+            if(j%2==0){
+                for (int i = 0; i < (matriz[0].length); i++) {            
+                    matriz[j][i]=""+numInit;
+                    numInit++;
+                }
+            }else{
+                for (int i = matriz[0].length-1; i >=0 ; i--) {            
+                    matriz[j][i]=""+numInit;
+                    numInit++;
+                }
+            }
+        }
+        imprimirMatrizCadena(matriz);
+    }
     public void transformada27(int dimen, int valInit) {
         String[][] matriz=new String[dimen][dimen];
         for (int j = matriz[0].length-1; j>=0 ; j--) {
@@ -187,13 +187,32 @@ public class Matrices {
         }
         imprimirMatrizCadena(matriz);
     }
+    public void transformada26(int dimen, int numInit) {
+        String[][] matriz=new String[dimen][dimen];
+        for (int j = 0; j < matriz[0].length; j++) {
+            if(j%2==0){
+                for (int i =  matriz.length-1; i >=0; i--) {
+                    matriz[j][i]=""+numInit;
+                    numInit++;
+                }                
+            }else{
+                for (int i = 0; i < matriz.length; i++) {
+                    matriz[j][i]=""+numInit;
+                    numInit++;
+                }
+            }
+        }
+        imprimirMatrizCadena(matriz);
+    }
+
+    
 
    
 
 
     public static void main(String[] args) {
         Matrices transf=new Matrices();
-        transf.transformada12(5, 0);
+        /*transf.transformada12(5, 0);
         System.out.println("");
         transf.transformada01(5, 0);
         System.out.println("");  
@@ -212,8 +231,9 @@ public class Matrices {
         transf.transformada02(5, 0);
         System.out.println(""); 
         transf.transformada27(5, 0);
-        System.out.println(""); 
+        System.out.println("");*/ 
+        transf.transformada21(5, 0);
+        System.out.println("");
                
-    }
-    
+    }  
 }

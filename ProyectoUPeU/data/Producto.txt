@@ -1,8 +1,8 @@
-P1	lona      	metros	C1	12.0	0.016	51.0
-P2	popelina  	metros	C1	35.0	0.014	29.0
+P1	lona      	metros	C1	12.0	0.016	43.0
+P2	popelina  	metros	C1	35.0	0.014	25.0
 P3	toalla    	metros	C1	12.0	0.016	49.0
 P4	bombasi   	metros	C1	07.0	0.028	56.0
-P5	franela   	metros	C1	05.0	0.020	27.0
+P5	franela   	metros	C1	05.0	0.020	22.0
 P6	gasa      	metros	C1	05.0	0.020	35.0
 P7	barrington	metros	C2	120.0	0.012	75.0
 P8	cardif    	metros	C2	45.0	0.011	102.0
